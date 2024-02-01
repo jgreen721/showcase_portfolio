@@ -1,0 +1,91 @@
+.theme-switch {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: calc(var(--mainPaddingX) / 2);
+}
+
+.theme-label {
+  position: relative;
+}
+
+.theme-label span {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.icon-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background: var(--mainColor);
+  box-shadow: 1px 5px 5px, 1px 10px 10px black inset;
+  box-shadow: 1px 2px 3px, 1px -3px 10px black inset;
+
+  transition: 0.5s;
+}
+
+.icon-div:hover {
+  transform: scale(0.99);
+  box-shadow: 3px 2px 5px, 5px -5px 10px black inset;
+}
+
+.icon {
+  font-size: 2rem;
+  position: absolute;
+}
+
+.sun-icon {
+  color: var(--white);
+  color: yellow;
+}
+
+.moon-icon {
+  color: var(--black);
+  color: antiquewhite;
+}
+
+.hide-icon {
+  animation: lower-el 0.75s forwards;
+}
+
+@keyframes lower-el {
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(10rem);
+  }
+}
+
+.raise-icon {
+  transform: translateY(10rem);
+  animation: raise-el 1s 0.25s forwards;
+}
+
+@keyframes raise-el {
+  0% {
+    transform: translateY(10rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

@@ -1,0 +1,25 @@
+.about-me-parent {
+  padding: 1rem 3rem;
+  min-width: 500px;
+}
+
+.about-me-div h5 {
+  margin-bottom: 2rem;
+}
+
+.about-me-link {
+  color: var(--mainColor);
+}
+
+.about-me-h5:first-letter {
+  float: left;
+  font-size: 5em;
+  line-height: 0.7em;
+  padding-top: 0.02em;
+}
+
+@media screen and (max-width: 1025px) {
+  .about-me-parent {
+    padding: 1rem 0rem;
+  }
+}

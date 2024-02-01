@@ -1,0 +1,14 @@
+.cursor-highlight {
+  content: "";
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: absolute;
+  background: black;
+  background: red;
+  inset: 0;
+  left: -15rem;
+  top: -15rem;
+  opacity: 25%;
+  filter: blur(85px);
+}

@@ -1,0 +1,105 @@
+.delay-0 {
+  --delay: 0s;
+}
+
+.delay-1 {
+  --delay: 0.25s;
+}
+
+.delay-2 {
+  --delay: 0.5s;
+}
+
+.delay-3 {
+  --delay: 0.75s;
+}
+
+.delay-4 {
+  --delay: 1s;
+}
+
+.delay-5 {
+  --delay: 1.25s;
+}
+
+.delay-6 {
+  --delay: 1.5s;
+}
+
+.drop-in {
+  transform: translateY(-20rem);
+  animation: drop-in 1.5s var(--delay) forwards;
+}
+
+@keyframes drop-in {
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.rotate-focus {
+  transform: rotateY(90deg);
+  filter: blur(50px);
+  animation: rotatefocus 1s var(--delay) forwards;
+}
+
+@keyframes rotatefocus {
+  50% {
+    transform: rotateY(45deg);
+    filter: blur(25px);
+  }
+  100% {
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+
+.rise-up {
+  /* color: red; */
+  transform: translateY(10rem);
+  animation: riseup 1s var(--delay) forwards;
+}
+
+@keyframes riseup {
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.slide-right {
+  /* color: red; */
+  transform: translateX(-20rem);
+  animation: slideright 1s var(--delay) forwards;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-20rem);
+  }
+  70% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+.scalegrow {
+  transform: scale(0);
+  animation: scalegrow 1s var(--delay) forwards;
+}
+
+@keyframes scalegrow {
+  50% {
+    transform: scale(1.1, 1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
