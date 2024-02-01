@@ -44,16 +44,16 @@ const Header = () => {
                 </div>
                 <ul className="skills">
                     <li className="skill-item slide-right delay-1">
-                        <h3 className={currCategory == "Newbie" ? "bold" : "thin"}>Newbie</h3>
+                        <h3 className={currCategory == "Newbie" ? "bold highlight-skill" : "thin"}>Newbie</h3>
                     </li>
                     <li className="skill-item slide-right delay-2">
-                        <h3 className={currCategory == "Beginner" ? "bold" : "thin"}>Beginner</h3>
+                        <h3 className={currCategory == "Beginner" ? "bold highlight-skill" : "thin"}>Beginner</h3>
                     </li>
                     <li className="skill-item slide-right delay-3">
-                        <h3 className={currCategory == "Junior" ? "bold" : "thin"}>Junior</h3>
+                        <h3 className={currCategory == "Junior" ? "bold highlight-skill" : "thin"}>Junior</h3>
                     </li>
                     <li className="skill-item slide-right delay-4">
-                        <h3 className={currCategory == "Senior" ? "bold" : "thin"}>Senior</h3>
+                        <h3 className={currCategory == "Senior" ? "bold highlight-skill" : "thin"}>Senior</h3>
                     </li>
                 </ul>
 

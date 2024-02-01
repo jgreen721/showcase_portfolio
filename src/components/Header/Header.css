@@ -36,13 +36,38 @@
 
 .skills {
   overflow: hidden;
-  margin: 2rem 0;
+  /* margin: 2rem 5rem; */
+  /* border: 3px solid green; */
+  padding: 2rem 6rem;
 }
 
 .skill-item {
   margin: 1.5rem 0;
   font-weight: 200;
   cursor: pointer;
+}
+
+.highlight-skill {
+  position: relative;
+}
+
+.highlight-skill::after {
+  content: "";
+  width: 4rem;
+  height: 3px;
+  position: absolute;
+  left: -6rem;
+  top: 45%;
+  background: var(--mainColor);
+  animation: growline 0.5s forwards;
+  transform: scale(0);
+  transform-origin: left;
+}
+
+@keyframes growline {
+  100% {
+    transform: scale(1);
+  }
 }
 
 .links {
@@ -91,16 +116,16 @@
     padding: 1rem 0rem;
   }
 
-  /* .header {
-    flex-direction: row;
-  } */
+  .highlight-skill::after {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: -0.5rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  /* .header-details {
-    max-width: 265px;
-  } */
-
   .description-row {
     margin: 0rem;
   }
