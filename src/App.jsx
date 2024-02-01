@@ -4,7 +4,7 @@ import "./App.css"
 import { useAppContext } from "./context/AppContext";
 
 function App() {
-    const {appTheme,category} = useAppContext()
+    const {appTheme} = useAppContext()
 
 
 

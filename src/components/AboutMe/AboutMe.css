@@ -11,6 +11,11 @@
 
 .about-me-link {
   color: var(--mainColor);
+  transition: 0.25s ease;
+}
+
+.about-me-link:hover {
+  color: var(--mintgreen);
 }
 
 .about-me-h5:first-letter {

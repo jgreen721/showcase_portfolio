@@ -2,8 +2,10 @@ import React from 'react'
 import "./Header.css";
 import {AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineLaptop} from "react-icons/ai"
 import {FaCodepen} from "react-icons/fa"
+import { useAppContext } from '../../context/AppContext';
 
 const Header = () => {
+    const {currCategory} = useAppContext();
   return (
     <div className="header">
 
@@ -32,7 +34,7 @@ const Header = () => {
             </div>
 
             <div className="header-details">
-                <div class="header-blurb-description-div">
+                <div className="header-blurb-description-div">
                     <div className="description-row">
                         <h4 className="mid-thin rise-up delay-4">Front-end developer with <span className="bold rise-up">full</span> stack<strong>+</strong> knowledge</h4>
                     </div>
@@ -42,16 +44,16 @@ const Header = () => {
                 </div>
                 <ul className="skills">
                     <li className="skill-item slide-right delay-1">
-                        <h3 className="thin">Newbie</h3>
+                        <h3 className={currCategory == "Newbie" ? "bold" : "thin"}>Newbie</h3>
                     </li>
                     <li className="skill-item slide-right delay-2">
-                        <h3 className="bold">Beginner</h3>
+                        <h3 className={currCategory == "Beginner" ? "bold" : "thin"}>Beginner</h3>
                     </li>
                     <li className="skill-item slide-right delay-3">
-                        <h3 className="thin">Junior</h3>
+                        <h3 className={currCategory == "Junior" ? "bold" : "thin"}>Junior</h3>
                     </li>
                     <li className="skill-item slide-right delay-4">
-                        <h3 className="thin">Senior</h3>
+                        <h3 className={currCategory == "Senior" ? "bold" : "thin"}>Senior</h3>
                     </li>
                 </ul>
 

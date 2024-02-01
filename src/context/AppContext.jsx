@@ -26,6 +26,7 @@ export const AppProvider = ({children})=>{
 const values = {
         appTheme,
         data,
+        currCategory,
         updateCategory,
         setAppTheme,
 }

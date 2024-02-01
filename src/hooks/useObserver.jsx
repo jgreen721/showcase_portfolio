@@ -4,14 +4,17 @@ export const useObserver=(el)=>{
     const [isVisible,setIsVisible] = useState(false)
 
     const changeSection = (entry)=>{
-        console.log(entry)
+        // console.log(entry)
         if(entry[0].isIntersecting){
             // console.log("toggleState");
             setIsVisible(true);
         }
+        else{
+            setIsVisible(false)
+        }
     }
 
-    const observer = new IntersectionObserver(changeSection)
+    const observer = new IntersectionObserver(changeSection,{threshold:.7})
 
 
     useEffect(()=>{
@@ -22,7 +25,7 @@ export const useObserver=(el)=>{
 
 
         return ()=>{
-            console.log("cleanUp");
+            // console.log("cleanUp");
             observer.unobserve(el.current);
         }
     },[])
