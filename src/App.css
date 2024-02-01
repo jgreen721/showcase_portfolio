@@ -17,11 +17,12 @@
   color: var(--mainColor);
   transition: 0.25s ease;
   height: 100vh;
+  /* border: 3px solid red; */
   overflow: hidden;
 }
 
 .app-content {
-  /* border: 3px solid red; */
+  /* border: 3px solid yellow; */
   max-width: 144rem;
   margin: 0 auto;
   position: relative;
@@ -33,20 +34,21 @@
   display: flex;
   gap: 5rem;
   height: 100%;
+  /* border: 2px solid green; */
 }
 
 .header-column {
   padding-left: var(--mainPaddingX);
   padding-top: var(--mainPaddingX);
+  padding-bottom: var(--mainPaddingX);
 }
 
 .about-column {
-  /* border: 2px solid red; */
-  /* position: relative; */
+  /* border: 6px solid red; */
   padding-top: var(--mainPaddingX);
   padding-right: var(--mainPaddingX);
-  overflow-y: auto;
   height: 100%;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -59,6 +61,9 @@
     display: block;
     position: relative;
     top: 30rem;
+    /* overflow-y: auto; */
+    /* height: 100%; */
+    padding-bottom: 30rem;
   }
   .header-column {
     position: fixed;
@@ -80,8 +85,5 @@
     padding-top: 0rem;
     padding: var(--mainPaddingX);
     background: var(--mainBgGradient);
-    /* height: 100%; */
-    /* overflow-y: auto; */
-    /* display: none; */
   }
 }

@@ -14,6 +14,7 @@ function App() {
       <div className="app-content">
         {/* <CursorGlow/> */}
         {/* <ThemeSwitch/> */}
+  
       <div className="app-row">
         <div className="column header-column">
           <Header/>
