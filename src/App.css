@@ -42,12 +42,12 @@
 
 .about-column {
   /* border: 2px solid red; */
-  position: relative;
+  /* position: relative; */
   padding-top: var(--mainPaddingX);
   padding-right: var(--mainPaddingX);
   overflow-y: auto;
   height: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .about-column::-webkit-scrollbar {
