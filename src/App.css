@@ -16,7 +16,8 @@
   font-family: var(--mainFont);
   color: var(--mainColor);
   transition: 0.25s ease;
-  /* height: 100vh; */
+  height: 100vh;
+  overflow: hidden;
 }
 
 .app-content {
@@ -24,8 +25,8 @@
   max-width: 144rem;
   margin: 0 auto;
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  /* overflow: hidden; */
 }
 
 .app-row {
@@ -45,7 +46,8 @@
   padding-top: var(--mainPaddingX);
   padding-right: var(--mainPaddingX);
   overflow-y: auto;
-  overflow-x: hidden;
+  height: 100%;
+  /* overflow-x: hidden; */
 }
 
 .about-column::-webkit-scrollbar {
@@ -78,5 +80,8 @@
     padding-top: 0rem;
     padding: var(--mainPaddingX);
     background: var(--mainBgGradient);
+    /* height: 100%; */
+    /* overflow-y: auto; */
+    /* display: none; */
   }
 }
