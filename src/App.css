@@ -60,7 +60,7 @@
     /* height: fit-content; */
     /* border: 3px solid red; */
     background: var(--mainBgGradient);
-    z-index: 5;
+    z-index: 15;
     width: 100%;
   }
 
