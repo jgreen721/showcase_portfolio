@@ -70,6 +70,7 @@
     padding-right: 0rem;
     padding-top: 0rem;
     padding: var(--mainPaddingX);
+    background: var(--mainBgGradient);
   }
   .app-row {
     flex-direction: column;

@@ -90,9 +90,9 @@
 }
 
 @media screen and (max-width: 450px) {
-  .header-details {
+  /* .header-details {
     max-width: 265px;
-  }
+  } */
 
   .description-row {
     margin: 0rem;
