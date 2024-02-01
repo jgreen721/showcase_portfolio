@@ -14,6 +14,8 @@ html {
   --black: rgb(27, 26, 26);
   --darkgrey: gray;
   --white: rgb(238, 230, 230);
+  --mintgreen: rgb(9, 146, 101);
+  /* --highlightblue: rgb(15, 104, 221); */
   --mainFont: "Inter", sans-serif;
 }
 
@@ -51,7 +53,7 @@ p {
 
 .large {
   font-size: 9rem;
-  line-height: 8rem;
+  /* line-height: 7rem; */
 }
 
 .bold {
@@ -107,18 +109,6 @@ p {
   h3 {
     font-size: 2.7rem;
   }
-
-  /* h4 {
-    font-size: 2.2rem;
-  }
-
-  h5 {
-    font-size: 1.9rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  } */
 }
 
 @media screen and (max-width: 450px) {
@@ -146,12 +136,4 @@ p {
   h4 {
     font-size: 2rem;
   }
-
-  /* h5 {
-    font-size: 1.9rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }  */
 }

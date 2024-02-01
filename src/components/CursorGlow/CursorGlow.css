@@ -10,5 +10,6 @@
   left: -15rem;
   top: -15rem;
   opacity: 25%;
+  z-index: 50;
   filter: blur(85px);
 }

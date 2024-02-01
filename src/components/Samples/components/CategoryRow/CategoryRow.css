@@ -51,3 +51,25 @@
   background: var(--mainColor);
   color: var(--mainBg);
 }
+
+@media screen and (max-width: 1050px) {
+  .carousel-row,
+  .carousel-item {
+    height: 200px;
+  }
+
+  .carousel-item {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .carousel-row,
+  .carousel-item {
+    height: 150px;
+  }
+
+  .carousel-item {
+    width: 150px;
+  }
+}
