@@ -15,6 +15,9 @@
 
 .carousel-row {
   height: 300px;
+  /* border: 3px solid red; */
+  width: 100%;
+  min-width: 300px;
   position: relative;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -22,7 +25,7 @@
 
 .carousel-item {
   height: 300px;
-  width: 300px;
+  width: 100%;
   position: absolute;
   inset: 0;
   transition: 0.5s ease;
@@ -139,17 +142,17 @@
 
 @media screen and (max-width: 1050px) {
   .carousel {
-    max-width: 450px;
+    max-width: 650px;
     margin: 0 auto;
   }
   .carousel-row,
   .carousel-item {
-    height: 200px;
+    height: 400px;
   }
 
-  .carousel-item {
+  /* .carousel-item {
     width: 200px;
-  }
+  } */
 
   .category-description {
     max-width: 400px;
@@ -159,10 +162,11 @@
 @media screen and (max-width: 450px) {
   .carousel-row,
   .carousel-item {
-    height: 150px;
+    height: 200px;
   }
 
   .carousel-item {
-    width: 150px;
+    width: 200px;
+    width: 100%;
   }
 }

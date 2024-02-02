@@ -46,6 +46,23 @@ const CategoryRow = ({category}) => {
     setInfo(temp);
   }
 
+  const handleNextItem=(dir)=>{
+    let tempInfo = {};
+    if(dir == "prev"){
+      setData((data)=>data.map(d=>d.translate > -104 ? {...d,hide:false,translate:d.translate - 105} : {...d,hide:true,translate:210}))
+      tempInfo = data.filter(d=>d.translate == 105)[0];
+
+    }
+    if(dir == "next"){
+      setData((data)=>data.map(d=>d.translate < 209 ? {...d,hide:false,translate:d.translate + 105} : {...d,hide:true,translate:-105}))
+      tempInfo = data.filter(d=>d.translate == -105)[0];
+
+    }
+    handleSetInfo(tempInfo);
+
+
+  }
+
   // console.log(setData)
   return (
     <div ref={categoryRef} className="category-row-section">
@@ -54,12 +71,15 @@ const CategoryRow = ({category}) => {
         <ul className="carousel">
           <div className="carousel-row">
             {data.map((item)=>(
-              <li onClick={()=>handleSetInfo(item)} key={item.id} className={item?.hide == true ?  "carousel-item hide-item" : "carousel-item"} style={{transform:`translateX(${item.translate}%)`}}>
+              <li key={item.id} className={item?.hide == true ?  "carousel-item hide-item" : "carousel-item"} style={{transform:`translateX(${item.translate}%)`}}>
                 <img className="carousel-img" src={item.img}/>
               </li>
               ))}
-          <button className="carousel-btn prev-btn" onClick={()=>setData((data)=>data.map(d=>d.translate > -104 ? {...d,hide:false,translate:d.translate - 105} : {...d,hide:true,translate:210}))}><FaArrowLeft/></button>
-          <button className="carousel-btn next-btn" onClick={()=>setData((data)=>data.map(d=>d.translate < 209 ? {...d,hide:false,translate:d.translate + 105} : {...d,hide:true,translate:-105}))}><FaArrowRight/></button>
+          <button className="carousel-btn prev-btn" onClick={()=>handleNextItem("prev")}
+            // setInfo((info)=>info = data.filter(d=>d.translate == 105)[0])
+            // console.log("PREV BTN FIRED!!",info,data);
+            ><FaArrowLeft/></button>
+          <button className="carousel-btn next-btn" onClick={()=>handleNextItem("next")}><FaArrowRight/></button>
           </div>
 
         </ul>
@@ -69,7 +89,7 @@ const CategoryRow = ({category}) => {
           <div className="preview-container">
             {!info?.title && <h4 className="empty-h4 mid-thin text-secondary">Select a Sample</h4>}
             {info?.title &&
-              <div className="item-info">
+              <div className="item-info slow-fade-in">
                  <h4 className="uppercase text-secondary">{info?.title}</h4>
                  <ul className="technology-list">
                   {info.technology.map(t=>(

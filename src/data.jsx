@@ -20,9 +20,9 @@ export const data = [
       description:"Building out small sites and applying responsive positioning to page elements.",
       samples:[
         {id:1,title:"Maker Prelaunch",description:"",technology:["HTML","CSS","JS"],img:makerPrelaunch,site:"https://jgreen721.github.io/frontend_challenges/maker-prelaunch/",translate:-105},
-        {id:2,title:"MultistepForm",description:"",technology:["HTML","CSS","JS"],img:multistepForm,site:"https://do-multistepform-dcdfuwwgc-jgreen721.vercel.app/",translate:0},
-        {id:3,title:"Notifications Snippet",description:"",technology:["HTML","CSS","JS"],img:notifications,site:"https://jgreen721.github.io/frontend_challenges/notificationsapp/",translate:105},
-        {id:4,title:"Password Generator",description:"",technology:["HTML","CSS","JS"],img:pwordGenerator,site:"https://jgreen721.github.io/frontend_challenges/passwd_gen/",translate:210},
+        {id:2,title:"MultistepForm",description:"Multisteps form with persistence data allowing users to change answers at any stage of the form.",technology:["HTML","CSS","JS"],img:multistepForm,site:"https://do-multistepform-dcdfuwwgc-jgreen721.vercel.app/",translate:0},
+        {id:3,title:"Notifications Snippet",description:"Elevate your user experience with our sleek notification snippet crafted in JavaScript. This minimalist yet powerful feature keeps users informed in real-time, ensuring a seamless and engaging interaction with your application.",technology:["HTML","CSS","JS"],img:notifications,site:"https://jgreen721.github.io/frontend_challenges/notificationsapp/",translate:105},
+        {id:4,title:"Password Generator",description:"Embark on a secure digital journey with our stylish JavaScript password generator. This user-friendly app effortlessly creates strong passwords, bridging the gap between accessibility and heightened online security in today's cyber landscape.",technology:["HTML","CSS","JS"],img:pwordGenerator,site:"https://jgreen721.github.io/frontend_challenges/passwd_gen/",translate:210},
       ]
     },
     {
@@ -30,7 +30,7 @@ export const data = [
       level:"Junior",
       description:"Continuing on with more advanced designs and deeper functionality",
       samples:[
-        {id:1,title:"Body Mass Calculator",description:"",technology:["HTML","CSS","React"],img:bodyMass,site:"https://frontend3dsolution.vercel.app/",translate:-105},
+        {id:1,title:"Body Mass Calculator",description:"Experience versatility with our Body Mass Calculator, ingeniously designed to compute your body mass in both pounds and kilograms. This user-friendly tool provides a holistic perspective on fitness, allowing you to effortlessly toggle between units, promoting a well-rounded approach to health monitoring and goal setting.",technology:["HTML","CSS","React"],img:bodyMass,site:"https://frontend3dsolution.vercel.app/",translate:-105},
         {id:2,title:"Clock UI",description:"",technology:["HTML","CSS","JS"],img:clockSite,site:"https://clockapp-react.vercel.app/",translate:0},
         {id:3,title:"Portfolio Demo",description:"",technology:["HTML","CSS","JS"],img:portfolio,site:"https://portfolio-challenge-three.vercel.app/",translate:105},
         {id:4,title:"Programming Quiz",description:"",technology:["HTML","CSS","JS"],img:quiz,site:"https://jgreen721.github.io/frontend_challenges/results_summary/",translate:210},
