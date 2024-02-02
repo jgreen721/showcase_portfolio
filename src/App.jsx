@@ -4,7 +4,7 @@ import "./App.css"
 import { useAppContext } from "./context/AppContext";
 
 function App() {
-    const {appTheme} = useAppContext()
+    const {appTheme} = useAppContext();
 
 
 
@@ -13,7 +13,7 @@ function App() {
     <div data-theme={appTheme} className="app">
       <div className="app-content">
         {/* <CursorGlow/> */}
-        {/* <ThemeSwitch/> */}
+         <ThemeSwitch/>
   
       <div className="app-row">
         <div className="column header-column">

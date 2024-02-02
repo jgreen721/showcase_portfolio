@@ -25,10 +25,9 @@ export const useObserver=(el)=>{
         }
 
 
-        return ()=>{
-            // console.log("cleanUp");
-            observer.unobserve(el.current);
-        }
+        // return ()=>{
+        //     observer.unobserve(el.current);
+        // }
     },[])
 
 

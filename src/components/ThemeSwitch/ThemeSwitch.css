@@ -3,6 +3,7 @@
   right: 0;
   top: 0;
   padding: calc(var(--mainPaddingX) / 2);
+  z-index: 50;
 }
 
 .theme-label {
