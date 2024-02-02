@@ -2,6 +2,7 @@ import {useEffect, useState} from "react"
 
 export const useObserver=(el)=>{
     const [isVisible,setIsVisible] = useState(false)
+    const [thresh,setThresh] = useState(.7)
 
     const changeSection = (entry)=>{
         // console.log(entry)
@@ -14,7 +15,7 @@ export const useObserver=(el)=>{
         }
     }
 
-    const observer = new IntersectionObserver(changeSection,{threshold:.7})
+    const observer = new IntersectionObserver(changeSection,{threshold:thresh})
 
 
     useEffect(()=>{
@@ -29,6 +30,13 @@ export const useObserver=(el)=>{
             observer.unobserve(el.current);
         }
     },[])
+
+
+    onresize=()=>{
+        if(innerWidth < 1050){
+            setThresh(.4)
+        }
+    }
 
 
 
