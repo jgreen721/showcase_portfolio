@@ -1,12 +1,15 @@
 .app[data-theme="dark"] {
   --mainBg: var(--black);
   --mainColor: var(--white);
+  --secondaryColor: var(--mintGreen);
   --mainBgGradient: linear-gradient(to right, var(--mainBg), var(--darkgrey));
 }
 
 .app[data-theme="light"] {
   --mainBg: var(--white);
   --mainColor: var(--black);
+  --secondaryColor: var(--mintGreen);
+
   --mainBgGradient: linear-gradient(to right, var(--mainBg), var(--darkgrey));
 }
 
@@ -61,10 +64,10 @@
   .app-row {
     display: block;
     position: relative;
-    top: 35rem;
+    top: 40rem;
     /* overflow-y: auto; */
     /* height: 100%; */
-    padding-bottom: 35rem;
+    padding-bottom: 40rem;
   }
   .header-column {
     position: fixed;
@@ -86,5 +89,16 @@
     padding-top: 0rem;
     padding: var(--mainPaddingX);
     background: var(--mainBgGradient);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app-row {
+    display: block;
+    position: relative;
+    top: 42.5rem;
+    /* overflow-y: auto; */
+    /* height: 100%; */
+    padding-bottom: 42.5rem;
   }
 }

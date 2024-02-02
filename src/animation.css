@@ -103,3 +103,23 @@
     transform: scale(1);
   }
 }
+
+.slow-fade-in {
+  opacity: 0;
+  animation: slowfadein 2s 0.5s forwards;
+}
+
+@keyframes slowfadein {
+  0% {
+    filter: hue-rotate(90deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+}

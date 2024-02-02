@@ -7,7 +7,7 @@ import "./Experience.css"
 const Model =()=>{
     const img = useGLTF("./models/typingguy2.glb");
     const {mixer,actions} = useAnimations(img.animations,img.scene);
-    const [pos,setPos] = useState([.15,-1.85,0])
+    const [pos,setPos] = useState([.15,-1.85,1])
     const [scale,setScale] = useState(.65)
     console.log(img)
 
@@ -24,12 +24,12 @@ const Model =()=>{
     useEffect(()=>{
         if(innerWidth < 825){
             setScale(.4)
-            setPos([.3,-1,0])
+            setPos([.3,-1,1])
         }
 
         if(innerWidth < 425){
             setScale(.4)
-            setPos([2,-1,0])
+            setPos([.65,-1,1.5])
         }
     },[])
 
@@ -40,7 +40,7 @@ const Model =()=>{
         }
         if(innerWidth < 425){
             setScale(.4)
-            setPos([2,-1,0])
+            setPos([1,-1,2])
         }
 
     }
@@ -49,7 +49,7 @@ const Model =()=>{
         <Float>
         <group position={pos} rotation={[0,Math.PI * -.25,0]}>
             <pointLight intensity={.7}/>
-            <directionalLight/>
+            <directionalLight intensity={2} position={[1,1,0]}/>
             <primitive scale={scale} object={img.scene}/>
         </group>
         </Float>

@@ -24,7 +24,7 @@ const Header = () => {
                 </div>
                 <div className="lastname">
                     <div className="hidden-overflow">
-                        <h1 className="name-h1 bold large drop-in delay-3">G</h1>
+                        <h1 className="name-h1 bold large drop-in delay-4">G</h1>
                     </div>
                     <h1 className="name-h1 mid-thin rotate-focus delay-1">r</h1>
                     <h1 className="name-h1 mid-thin rotate-focus delay-2">e</h1>
@@ -40,7 +40,7 @@ const Header = () => {
                     </div>
                     <div className="blurb-div">
                         {/* <h5 className="thin scalegrow delay-6">I build pixel-<strong>perfect</strong>, engaging, and accessible sites.</h5> */}
-                        <h5 className="thin scalegrow delay-6">Crafting Seamless Digital Experiences: From simple components to enchanting fullstack sites, I specialize in bringing pixel-perfect responsiveness and modern HTML standards to life.</h5>
+                        <h5 className="thin scalegrow delay-6">From simple components to enchanting fullstack sites, I specialize in bringing pixel-perfect responsiveness and modern HTML standards to life.</h5>
                     </div>
                 </div>
                 <div className="skill-scene-row">

@@ -125,8 +125,11 @@
 }
 
 .empty-h4 {
-  max-width: 85px;
+  /* max-width: 85px; */
+  text-shadow: 1px 1px 1px var(--mintgreen), 1px 1px 10px var(--mintgreen),
+    1px 1px 25px var(--mintgreen);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .hide-item {

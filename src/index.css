@@ -118,6 +118,14 @@ p {
   z-index: 1; /*used on trailing samples to improve UX of not seeing the card slide over upon translate reset */
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-secondary {
+  color: var(--mintgreen);
+}
+
 @media screen and (max-width: 1050px) {
   :root {
     --mainPaddingX: 4.5rem;

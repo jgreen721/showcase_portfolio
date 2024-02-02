@@ -50,7 +50,7 @@ const CategoryRow = ({category}) => {
   return (
     <div ref={categoryRef} className="category-row-section">
         <h3 className="my-1"><span className="mid-thin mr-2">Level:</span>{category.level}</h3>
-        <h5 className="mid-thin category-description">{category.description}</h5>
+        <h5 className="mid-thin">{category.description}</h5>
         <ul className="carousel">
           <div className="carousel-row">
             {data.map((item)=>(
@@ -67,10 +67,10 @@ const CategoryRow = ({category}) => {
           {/* <button className="carousel-btn" onClick={()=>setData((data)=>data.map(d=>d.translate > -105 ? {...d,translate:d.translate - 105} : {...d,translate:210}))}>Prev</button>
           <button className="carousel-btn" onClick={()=>setData((data)=>data.map(d=>d.translate < 210 ? {...d,translate:d.translate + 105} : {...d,translate:-105}))}>Next</button> */}
           <div className="preview-container">
-            {!info?.title && <h4 className="empty-h4">Select a Sample</h4>}
+            {!info?.title && <h4 className="empty-h4 mid-thin text-secondary">Select a Sample</h4>}
             {info?.title &&
               <div className="item-info">
-                 <h5 className="mid-thin">{info?.title}</h5>
+                 <h4 className="uppercase text-secondary">{info?.title}</h4>
                  <ul className="technology-list">
                   {info.technology.map(t=>(
                     <h4 className={t.color} key={t.name}>{t.icon} </h4>
