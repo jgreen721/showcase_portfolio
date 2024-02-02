@@ -60,10 +60,10 @@
   .app-row {
     display: block;
     position: relative;
-    top: 30rem;
+    top: 35rem;
     /* overflow-y: auto; */
     /* height: 100%; */
-    padding-bottom: 30rem;
+    padding-bottom: 35rem;
   }
   .header-column {
     position: fixed;
