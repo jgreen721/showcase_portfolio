@@ -3,12 +3,12 @@ import "./Header.css";
 import {AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineLaptop} from "react-icons/ai"
 import {FaCodepen} from "react-icons/fa"
 import { useAppContext } from '../../context/AppContext';
+import {Experience} from "../"
 
 const Header = () => {
     const {currCategory} = useAppContext();
   return (
     <div className="header">
-
 
       {/* NAME-ROW */}
         <div className="name-row">
@@ -39,9 +39,11 @@ const Header = () => {
                         <h4 className="mid-thin rise-up delay-4">Front-end developer with <span className="bold rise-up">full</span> stack<strong>+</strong> knowledge</h4>
                     </div>
                     <div className="blurb-div">
-                        <h5 className="thin scalegrow delay-6">I build pixel-<strong>perfect</strong>, engaging, and accessible sites.</h5>
+                        {/* <h5 className="thin scalegrow delay-6">I build pixel-<strong>perfect</strong>, engaging, and accessible sites.</h5> */}
+                        <h5 className="thin scalegrow delay-6">Crafting Seamless Digital Experiences: From simple components to enchanting fullstack sites, I specialize in bringing pixel-perfect responsiveness and modern HTML standards to life.</h5>
                     </div>
                 </div>
+                <div className="skill-scene-row">
                 <ul className="skills">
                     <li className="skill-item slide-right delay-1">
                         <h3 className={currCategory == "Newbie" ? "bold highlight-skill" : "thin"}>Newbie</h3>
@@ -56,6 +58,8 @@ const Header = () => {
                         <h3 className={currCategory == "Senior" ? "bold highlight-skill" : "thin"}>Senior</h3>
                     </li>
                 </ul>
+               <Experience/>
+                </div>
 
                  <ul className="links">
                     <li className="link-item drop-in delay-0">

@@ -32,6 +32,14 @@
 
 .blurb-div {
   margin-top: 4rem;
+  position: relative;
+  z-index: 50;
+}
+
+.skill-scene-row {
+  /* border: 3px solid blue; */
+  width: 100%;
+  position: relative;
 }
 
 .skills {
@@ -103,19 +111,25 @@
 
   .blurb-div {
     margin-top: 1rem;
+    max-width: 400px;
   }
+
   .skills {
     display: flex;
     margin: 1rem 0;
     padding: 2rem 0rem;
-
     gap: 2.5rem;
+    /* border: 2px solid blue; */
   }
 
   .links {
     justify-content: flex-start;
     gap: 2rem;
     padding: 1rem 0rem;
+  }
+
+  .skill-scene-row {
+    width: calc(100vw - var(--mainPaddingX) * 2);
   }
 
   .highlight-skill::after {

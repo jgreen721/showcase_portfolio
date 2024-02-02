@@ -50,7 +50,7 @@ const CategoryRow = ({category}) => {
   return (
     <div ref={categoryRef} className="category-row-section">
         <h3 className="my-1"><span className="mid-thin mr-2">Level:</span>{category.level}</h3>
-        <h5 className="mid-thin">{category.description}</h5>
+        <h5 className="mid-thin category-description">{category.description}</h5>
         <ul className="carousel">
           <div className="carousel-row">
             {data.map((item)=>(

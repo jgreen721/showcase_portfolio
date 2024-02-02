@@ -41,6 +41,7 @@
   padding-left: var(--mainPaddingX);
   padding-top: var(--mainPaddingX);
   padding-bottom: var(--mainPaddingX);
+  position: relative;
 }
 
 .about-column {
