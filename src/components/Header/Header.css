@@ -107,6 +107,8 @@
   .skills {
     display: flex;
     margin: 1rem 0;
+    padding: 2rem 0rem;
+
     gap: 2.5rem;
   }
 
@@ -140,11 +142,6 @@
   .description-row,
   .blurb-div {
     margin-right: 10rem;
-  }
-
-  .skills {
-    padding: 2rem 0rem;
-    gap: 1rem;
   }
 
   .skill-item {
