@@ -126,12 +126,25 @@
 }
 
 @media screen and (max-width: 450px) {
+  .name-row {
+    margin-bottom: 2rem;
+  }
   .description-row {
     margin: 0rem;
   }
 
   .blurb-div {
     margin: 1.5rem 0;
+  }
+
+  .description-row,
+  .blurb-div {
+    margin-right: 10rem;
+  }
+
+  .skills {
+    padding: 2rem 0rem;
+    gap: 1rem;
   }
 
   .skill-item {

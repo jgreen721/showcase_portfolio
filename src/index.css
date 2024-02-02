@@ -15,8 +15,38 @@ html {
   --darkgrey: gray;
   --white: rgb(238, 230, 230);
   --mintgreen: rgb(9, 146, 101);
+  --htmlorange: rgb(255, 123, 0);
+  --cssblue: rgb(0, 38, 255);
+  --jsyellow: rgb(179, 255, 0);
+  --blenderorange: rgb(255, 153, 0);
+  --reactblue: rgb(0, 153, 255);
+  --threegrey: rgb(54, 49, 49);
   /* --highlightblue: rgb(15, 104, 221); */
   --mainFont: "Inter", sans-serif;
+}
+
+.html_orange {
+  color: var(--htmlorange);
+}
+
+.js_yellow {
+  color: var(--jsyellow);
+}
+
+.css_blue {
+  color: var(--cssblue);
+}
+
+.react_blue {
+  color: var(--reactblue);
+}
+
+.blender_orange {
+  color: var(--blenderorange);
+}
+
+.three_grey {
+  color: var(--threegrey);
 }
 
 li {
