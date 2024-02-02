@@ -2,8 +2,8 @@ import {useEffect, useState} from "react"
 
 export const useObserver=(el)=>{
     const [isVisible,setIsVisible] = useState(false)
-    const [thresh,setThresh] = useState(.7)
-
+    const [thresh,setThresh] = useState(innerWidth > 1050 ? .6 : .25)
+    let observer;
     const changeSection = (entry)=>{
         // console.log(entry)
         if(entry[0].isIntersecting){
@@ -14,8 +14,8 @@ export const useObserver=(el)=>{
             setIsVisible(false)
         }
     }
-
-    const observer = new IntersectionObserver(changeSection,{threshold:thresh})
+    
+     observer = new IntersectionObserver(changeSection,{threshold:thresh})
 
 
     useEffect(()=>{
@@ -34,7 +34,10 @@ export const useObserver=(el)=>{
 
     onresize=()=>{
         if(innerWidth < 1050){
-            setThresh(.4)
+            console.log("mobile thresh")
+            setThresh(.3)
+            observer = new IntersectionObserver(changeSection,{threshold:thresh})
+
         }
     }
 
