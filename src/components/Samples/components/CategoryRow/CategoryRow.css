@@ -1,14 +1,43 @@
 .category-row-section {
-  padding: 2rem 0;
+  padding: 2rem;
+  position: relative;
   /* border: 3px solid red; */
+}
+
+.category-row-section::before {
+  content: "";
+  width: 75%;
+  height: 4px;
+  background: lightgray;
+  position: absolute;
+  left: 12.5%;
+  opacity: 35%;
+  bottom: 0;
+  border-radius: 100px;
+}
+
+.category-row-section::after {
+  content: "";
+  width: 75%;
+  height: 4px;
+  background: var(--mintgreen);
+  position: absolute;
+
+  bottom: 0;
+  filter: blur(20px);
+  left: 12.5%;
+}
+
+.category-row-header {
+  /* margin: 0 2rem; */
 }
 
 .carousel {
   /* border: 2px solid red; */
   /* height: 300px; */
   position: relative;
-  margin: 2rem 0;
-  padding: 2rem;
+  /* margin: 2rem 0; */
+  padding: 2rem 0;
   overflow: hidden;
   /* border: 3px solid red; */
 }
@@ -103,10 +132,37 @@
 
 .preview-container {
   /* height: 250px; */
-  width: 300px;
+  /* width:  */
   /* border: 2px solid red; */
+  margin: 0rem 3rem;
   padding: 1rem;
-  text-align: center;
+  position: relative;
+  /* text-align: center; */
+}
+
+.preview-container::before {
+  content: "";
+  background: linear-gradient(transparent, black, transparent);
+  /* background: black; */
+  position: absolute;
+  width: 75%;
+  height: 65%;
+  inset: 0;
+  left: 12.5%;
+  top: 17.5%;
+  filter: blur(50px);
+  z-index: 1;
+}
+
+.item-info {
+  position: relative;
+  z-index: 20;
+}
+
+.technologies-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .technology-list {
@@ -125,6 +181,12 @@
   cursor: pointer;
   display: inline-block;
   margin: 1rem 0;
+  transition: 0.2s ease;
+}
+
+.visit-link:hover {
+  color: var(--secondaryColor);
+  text-shadow: 1px 1px 1px var(--mintgreen);
 }
 
 .empty-h4 {

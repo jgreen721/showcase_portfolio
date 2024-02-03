@@ -11,6 +11,7 @@ html {
 
 :root {
   --mainPaddingX: 12.5rem;
+  --mainPaddingBottom: 6.5rem;
   --black: rgb(27, 26, 26);
   --darkgrey: gray;
   --white: rgb(238, 230, 230);
@@ -21,7 +22,6 @@ html {
   --blenderorange: rgb(255, 153, 0);
   --reactblue: rgb(0, 153, 255);
   --threegrey: rgb(54, 49, 49);
-  /* --highlightblue: rgb(15, 104, 221); */
   --mainFont: "Inter", sans-serif;
 }
 
@@ -118,6 +118,11 @@ p {
   z-index: 1; /*used on trailing samples to improve UX of not seeing the card slide over upon translate reset */
 }
 
+.high-z {
+  position: relative;
+  z-index: 50;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -152,6 +157,7 @@ p {
 @media screen and (max-width: 450px) {
   :root {
     --mainPaddingX: 2rem;
+    --mainPaddingBottom: 2rem;
   }
 
   .large {

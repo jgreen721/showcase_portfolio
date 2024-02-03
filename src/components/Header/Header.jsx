@@ -11,7 +11,7 @@ const Header = () => {
     <div className="header">
 
       {/* NAME-ROW */}
-        <div className="name-row">
+        <div className="name-row high-z">
                 <div className="firstname">
                     <div className="hidden-overflow">
                         <h1 className="name-h1 bold large drop-in delay-3">J</h1>
@@ -34,28 +34,28 @@ const Header = () => {
             </div>
 
             <div className="header-details">
-                <div className="header-blurb-description-div">
+                <div className="header-blurb-description-div high-z">
                     <div className="description-row">
                         <h4 className="mid-thin rise-up delay-4">Front-end developer with <span className="bold rise-up">full</span> stack<strong>+</strong> knowledge</h4>
                     </div>
                     <div className="blurb-div">
                         {/* <h5 className="thin scalegrow delay-6">I build pixel-<strong>perfect</strong>, engaging, and accessible sites.</h5> */}
-                        <h5 className="thin scalegrow delay-6 desktop-blurb">From simple components to enchanting fullstack sites, I specialize in bringing pixel-perfect responsiveness and modern HTML standards to life.</h5>
+                        <h5 className="thin scalegrow delay-6">From simple components to enchanting fullstack sites, I specialize in bringing pixel-perfect responsiveness and modern HTML standards to life.</h5>
                     </div>
                 </div>
                 <div className="skill-scene-row">
-                <ul className="skills">
+                <ul className="skills high-z">
                     <li className="skill-item slide-right delay-1">
-                        <h3 className={currCategory == "Newbie" ? "bold highlight-skill" : "thin"}>Newbie</h3>
+                        <h4 className={currCategory == "Newbie" ? "bold highlight-skill" : "thin"}>Newbie</h4>
                     </li>
                     <li className="skill-item slide-right delay-2">
-                        <h3 className={currCategory == "Beginner" ? "bold highlight-skill" : "thin"}>Beginner</h3>
+                        <h4 className={currCategory == "Beginner" ? "bold highlight-skill" : "thin"}>Beginner</h4>
                     </li>
                     <li className="skill-item slide-right delay-3">
-                        <h3 className={currCategory == "Junior" ? "bold highlight-skill" : "thin"}>Junior</h3>
+                        <h4 className={currCategory == "Junior" ? "bold highlight-skill" : "thin"}>Junior</h4>
                     </li>
                     <li className="skill-item slide-right delay-4">
-                        <h3 className={currCategory == "Senior" ? "bold highlight-skill" : "thin"}>Senior</h3>
+                        <h4 className={currCategory == "Senior" ? "bold highlight-skill" : "thin"}>Senior</h4>
                     </li>
                 </ul>
                <Experience/>

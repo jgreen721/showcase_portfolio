@@ -1,6 +1,8 @@
 .about-me-parent {
-  padding: 2rem 3rem;
-  min-width: 500px;
+  /* padding: 2rem 3rem; */
+  /* min-width: 500px; */
+  padding-right: var(--mainPaddingX);
+  padding-top: var(--mainPaddingX);
   /* overflow-y: auto;
   height: 100%; */
 }

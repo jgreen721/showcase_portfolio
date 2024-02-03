@@ -15,7 +15,7 @@ export const useObserver=(el)=>{
         }
     }
     
-     observer = new IntersectionObserver(changeSection,{threshold:thresh})
+     observer = new IntersectionObserver(changeSection,{threshold:.2})
 
 
     useEffect(()=>{
@@ -34,7 +34,7 @@ export const useObserver=(el)=>{
     onresize=()=>{
         if(innerWidth < 1050){
             console.log("mobile thresh")
-            setThresh(.3)
+            setThresh(.2)
             observer = new IntersectionObserver(changeSection,{threshold:thresh})
 
         }

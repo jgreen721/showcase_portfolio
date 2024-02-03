@@ -1,13 +1,12 @@
 .header {
-  /* display: flex;
-  flex-direction: column;
-  gap: 2rem; */
   height: 100%;
   /* border: 3px solid red; */
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: var(--mainPaddingX);
-  padding-right: 0;
-  /* text-shadow: 1px 1px 1px var(--mainBg), 1px 1px 10px var(--mainBg); */
+  padding-bottom: var(--mainPaddingBottom);
+  padding-right: 0rem;
 }
 
 .name-row,
@@ -32,46 +31,30 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
-  max-height: 600px;
-  /* max-width: 385px; */
-  /* margin: 0rem 1rem; */
-}
-
-.header-blurb-description-div {
-  position: relative;
-  z-index: 50;
-}
-
-.description-row {
-  margin: -0.5rem 0;
-  overflow: hidden;
-  position: relative;
 }
 
 .blurb-div {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .skill-scene-row {
   /* border: 3px solid blue; */
   width: 100%;
   position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .skills {
   overflow: hidden;
-  /* margin: 2rem 5rem; */
-  /* border: 3px solid green; */
   padding: 2rem 6rem;
-  position: relative;
-  z-index: 50;
 }
 
 .skill-item {
   margin: 1.5rem 0;
   font-weight: 200;
-  cursor: pointer;
 }
 
 .highlight-skill {
@@ -99,12 +82,12 @@
 
 .links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
   overflow: hidden;
   width: 100%;
-  /* gap: 2.5rem; */
+  gap: 3rem;
+  /* border: 2px solid red; */
 }
 
 .media-icon {
@@ -120,21 +103,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .header-details {
-    max-width: fit-content;
-    margin: 0;
-  }
-
-  .description-row {
-    margin: 0rem;
-  }
-
   .blurb-div {
-    margin-top: 1rem;
-    max-width: 400px;
-  }
-
-  .desktop-blurb {
     display: none;
   }
 
@@ -149,12 +118,11 @@
   .links {
     justify-content: flex-start;
     gap: 2rem;
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
   }
 
   .skill-scene-row {
-    width: calc(100vw - var(--mainPaddingX) * 2);
-    position: static;
+    position: static; /*frees Experience up from container restraint */
   }
 
   .highlight-skill::after {
@@ -167,21 +135,9 @@
 }
 
 @media screen and (max-width: 450px) {
-  .name-row {
-    margin-bottom: 2rem;
-  }
   .description-row {
     margin: 0rem;
   }
-
-  .blurb-div {
-    margin: 1.5rem 0;
-  }
-
-  /* .description-row,
-  .blurb-div {
-    margin-right: 10rem;
-  } */
 
   .header-blurb-description-div {
     max-width: 250px;
