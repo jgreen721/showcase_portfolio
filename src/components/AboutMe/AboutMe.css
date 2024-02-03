@@ -27,8 +27,9 @@
 
 .footer {
   font-size: 1.5rem;
-  padding: 0rem 2rem;
-  padding-bottom: 7rem;
+  margin: 2rem;
+  padding: 4rem 2rem;
+  /* padding-bottom: 7rem; */
   /* padding-top: 0rem; */
 }
 
@@ -37,4 +38,14 @@
     min-width: auto;
     padding: 1rem 0rem;
   }
+
+  .footer {
+    text-align: center;
+  }
 }
+
+/* @media screen and (max-width: 450px) {
+  .footer {
+    text-align: center;
+  }
+} */

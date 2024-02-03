@@ -1,8 +1,8 @@
 .experience-overlay {
   position: absolute;
 
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   /* border: 5px solid red; */
   bottom: 0rem;
   right: -10rem;
@@ -11,5 +11,9 @@
 @media screen and (max-width: 1050px) {
   .experience-overlay {
     right: 0rem;
+    width: 50%;
+    height: 40rem;
+
+    /* border: 2px solid red; */
   }
 }

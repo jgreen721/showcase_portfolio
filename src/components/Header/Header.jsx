@@ -40,7 +40,7 @@ const Header = () => {
                     </div>
                     <div className="blurb-div">
                         {/* <h5 className="thin scalegrow delay-6">I build pixel-<strong>perfect</strong>, engaging, and accessible sites.</h5> */}
-                        <h5 className="thin scalegrow delay-6">From simple components to enchanting fullstack sites, I specialize in bringing pixel-perfect responsiveness and modern HTML standards to life.</h5>
+                        <h5 className="thin scalegrow delay-6 desktop-blurb">From simple components to enchanting fullstack sites, I specialize in bringing pixel-perfect responsiveness and modern HTML standards to life.</h5>
                     </div>
                 </div>
                 <div className="skill-scene-row">

@@ -7,8 +7,8 @@ import "./Experience.css"
 const Model =()=>{
     const img = useGLTF("./models/typingguy2.glb");
     const {mixer,actions} = useAnimations(img.animations,img.scene);
-    const [pos,setPos] = useState([.15,-1.85,1])
-    const [scale,setScale] = useState(.65)
+    const [pos,setPos] = useState([.75,-2,1])
+    const [scale,setScale] = useState(.35)
     console.log(img)
 
     useFrame(()=>{
@@ -21,26 +21,34 @@ const Model =()=>{
         })
     })
 
-    useEffect(()=>{
-        if(innerWidth < 825){
-            setScale(.4)
-            setPos([.3,-1,1])
-        }
+    // useEffect(()=>{
+    //     if(innerWidth < 825){
+    //         setScale(.4)
+    //         setPos([.1,-1,1])
+    //     }
 
-        if(innerWidth < 425){
-            setScale(.4)
-            setPos([.65,-1,1.5])
-        }
-    },[])
+    //     if(innerWidth < 425){
+    //         setScale(.3)
+    //         setPos([.65,-1.5,1.5])
+    //     }
+    //     if(innerWidth > 825){
+    //         setScale(.6);
+    //         setPos(([-.5,-1.85,1]))
+    //     }
+    // },[])
 
     onresize=()=>{
-        if(innerWidth < 825){
-            setScale(.4)
-            setPos([.3,-1,0])
+        if(innerWidth > 1050){
+            setPos([.75,-2,1])
+            setScale(.35)
+        }
+        if(innerWidth < 1050){
+            setScale(.7)
+            setPos([-.5,-1.5,0])
         }
         if(innerWidth < 425){
-            setScale(.4)
-            setPos([1,-1,2])
+            setScale(.2)
+            setPos([0,-1.25,2])
         }
 
     }
