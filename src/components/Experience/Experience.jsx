@@ -21,21 +21,18 @@ const Model =()=>{
         })
     })
 
-    // useEffect(()=>{
-    //     if(innerWidth < 825){
-    //         setScale(.4)
-    //         setPos([.1,-1,1])
-    //     }
+    useEffect(()=>{
+        if(innerWidth < 1050){
+            setScale(.7)
+            setPos([-.5,-1.5,0])
+        }
 
-    //     if(innerWidth < 425){
-    //         setScale(.3)
-    //         setPos([.65,-1.5,1.5])
-    //     }
-    //     if(innerWidth > 825){
-    //         setScale(.6);
-    //         setPos(([-.5,-1.85,1]))
-    //     }
-    // },[])
+        if(innerWidth < 425){
+            setScale(.2)
+            setPos([0,-1.25,2])
+        }
+      
+    },[])
 
     onresize=()=>{
         if(innerWidth > 1050){
