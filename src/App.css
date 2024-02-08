@@ -13,12 +13,13 @@
 }
 
 .app {
-  background: var(--mainBg);
+  /* background: var(--mainBg); */
   background: var(--mainBgGradient);
   font-family: var(--mainFont);
   color: var(--mainColor);
   transition: 0.25s ease;
   text-shadow: 1px 1px 1px var(--mainBg), 1px 1px 10px var(--mainBg);
+  height: 100vh;
 }
 
 .app-content {
@@ -26,19 +27,24 @@
   max-width: 144rem;
   margin: 0 auto;
   position: relative;
+  height: 100%;
 }
 
 .app-row {
   display: flex;
-  height: 100vh;
+  height: 100%;
   gap: 17.5rem;
+  background: var(--mainBgGradient);
 }
 
 .header-column {
   position: relative;
+  height: 100%;
+  /* border: 3px solid red; */
 }
 
 .about-column {
+  height: 100%;
   overflow-y: auto;
 }
 
