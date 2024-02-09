@@ -5,7 +5,7 @@ import "./Experience.css"
 
 
 const Model =()=>{
-    const img = useGLTF("./models/typingguy2.glb");
+    const img = useGLTF("./models/newtypingscene.glb");
     const {mixer,actions} = useAnimations(img.animations,img.scene);
     const [pos,setPos] = useState([.75,-2,1])
     const [scale,setScale] = useState(.35)
