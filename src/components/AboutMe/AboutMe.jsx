@@ -13,7 +13,7 @@ const AboutMe = ({data}) => {
         <Samples data={data}/>
       </div>
       <footer className="footer">
-        <h5 className="mid-thin">All designs through <span className="bold"><a className="about-me-link" target="_blank" href="https://figma.com">Figma</a></span> and coded in <span className="bold"><a className="about-me-link" target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a></span> by myself. Built mostly with <span className="bold"><a className="about-me-link" target="_blank" href="https://react.dev/" target="_blank">React</a></span> and deployed either by <span className="bold"><a className="about-me-link" target="_blank" href="https://github.com">Github</a></span> or <span className="bold"><a target="_blank" className="about-me-link" href="https://vercel.com">Vercel</a></span></h5>
+        <h5 className="mid-thin">All designs through <span className="bold"><a className="about-me-link" target="_blank" href="https://figma.com">Figma</a></span> and coded in <span className="bold"><a className="about-me-link" target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a></span> by myself. Built mostly with <span className="bold"><a className="about-me-link" href="https://react.dev/" target="_blank">React</a></span> and deployed either by <span className="bold"><a className="about-me-link" target="_blank" href="https://github.com">Github</a></span> or <span className="bold"><a target="_blank" className="about-me-link" href="https://vercel.com">Vercel</a></span></h5>
       </footer>
    
     </div>

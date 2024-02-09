@@ -44,7 +44,7 @@
 }
 
 .about-column {
-  height: 100%;
+  /* height: 100%; */
   overflow-y: auto;
 }
 
@@ -74,6 +74,12 @@
     padding-top: 0rem;
     padding: var(--mainPaddingX);
     background: var(--mainBgGradient);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header-column {
+    height: fit-content;
   }
 }
 
